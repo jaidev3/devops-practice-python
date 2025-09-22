@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>k6 Load Test Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .header { background: #f4f4f4; padding: 20px; border-radius: 5px; }
+        .metric { margin: 10px 0; padding: 10px; border-left: 4px solid #007cba; }
+        .success { border-left-color: #28a745; }
+        .warning { border-left-color: #ffc107; }
+        .error { border-left-color: #dc3545; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🚀 k6 Load Test Report</h1>
+        <p>Generated on: 2025-09-22T13:20:55.150Z</p>
+    </div>
+    
+    <h2>📊 Summary Metrics</h2>
+    <div class="metric success">
+        <strong>Total Requests:</strong> 98280
+    </div>
+    <div class="metric success">
+        <strong>Failed Requests:</strong> 98280
+    </div>
+    <div class="metric success">
+        <strong>Error Rate:</strong> 0.00%
+    </div>
+    <div class="metric success">
+        <strong>Average Response Time:</strong> 6.29ms
+    </div>
+    <div class="metric success">
+        <strong>95th Percentile Response Time:</strong> 30.07ms
+    </div>
+    <div class="metric success">
+        <strong>Throughput:</strong> 689.35 requests/second
+    </div>
+    
+    <h2>📈 Detailed Metrics</h2>
+    <table>
+        <tr><th>Metric</th><th>Value</th></tr>
+        <tr><td>http_req_failed</td><td>{
+  "rate": 0,
+  "passes": 0,
+  "fails": 98280
+}</td></tr><tr><td>response_time</td><td>{
+  "avg": 6.287157042704912,
+  "min": 0.365,
+  "med": 0.882,
+  "max": 384.979,
+  "p(90)": 8.304200000000002,
+  "p(95)": 30.075799999999923
+}</td></tr><tr><td>vus</td><td>{
+  "value": 32,
+  "min": 10,
+  "max": 3986
+}</td></tr><tr><td>vus_max</td><td>{
+  "min": 4000,
+  "max": 4000,
+  "value": 4000
+}</td></tr><tr><td>iteration_duration</td><td>{
+  "max": 3255.868458,
+  "p(90)": 2806.6184332000003,
+  "p(95)": 2905.8738624999996,
+  "avg": 2005.0251542171259,
+  "min": 1000.770292,
+  "med": 2003.247875
+}</td></tr><tr><td>http_req_tls_handshaking</td><td>{
+  "p(95)": 0,
+  "avg": 0,
+  "min": 0,
+  "med": 0,
+  "max": 0,
+  "p(90)": 0
+}</td></tr><tr><td>http_req_blocked</td><td>{
+  "avg": 0.026607244607261972,
+  "min": 0,
+  "med": 0.003,
+  "max": 37.818,
+  "p(90)": 0.008,
+  "p(95)": 0.017
+}</td></tr><tr><td>http_req_connecting</td><td>{
+  "avg": 0.01919247049247055,
+  "min": 0,
+  "med": 0,
+  "max": 37.77,
+  "p(90)": 0,
+  "p(95)": 0
+}</td></tr><tr><td>http_reqs</td><td>{
+  "count": 98280,
+  "rate": 689.3455217683119
+}</td></tr><tr><td>http_req_sending</td><td>{
+  "avg": 0.016966249491248052,
+  "min": 0.002,
+  "med": 0.008,
+  "max": 30.372,
+  "p(90)": 0.021,
+  "p(95)": 0.03
+}</td></tr><tr><td>iterations</td><td>{
+  "count": 98279,
+  "rate": 689.3385076706138
+}</td></tr><tr><td>data_sent</td><td>{
+  "count": 10221092,
+  "rate": 71691.7378691689
+}</td></tr><tr><td>http_req_duration{expected_response:true}</td><td>{
+  "min": 0.365,
+  "med": 0.882,
+  "max": 384.979,
+  "p(90)": 8.304100000000002,
+  "p(95)": 30.07489999999992,
+  "avg": 6.287122964997925
+}</td></tr><tr><td>http_req_receiving</td><td>{
+  "p(90)": 0.043,
+  "p(95)": 0.065,
+  "avg": 0.02880347985348229,
+  "min": 0.005,
+  "med": 0.017,
+  "max": 52.809
+}</td></tr><tr><td>http_req_waiting</td><td>{
+  "max": 384.945,
+  "p(90)": 8.216300000000006,
+  "p(95)": 29.941599999999948,
+  "avg": 6.241353235653257,
+  "min": 0.343,
+  "med": 0.851
+}</td></tr><tr><td>request_count</td><td>{
+  "count": 98279,
+  "rate": 689.3385076706138
+}</td></tr><tr><td>data_received</td><td>{
+  "count": 14742000,
+  "rate": 103401.82826524678
+}</td></tr><tr><td>error_rate</td><td>{
+  "fails": 98279,
+  "rate": 0,
+  "passes": 0
+}</td></tr><tr><td>checks</td><td>{
+  "rate": 1,
+  "passes": 589674,
+  "fails": 0
+}</td></tr><tr><td>http_req_duration</td><td>{
+  "med": 0.882,
+  "max": 384.979,
+  "p(90)": 8.304100000000002,
+  "p(95)": 30.07489999999992,
+  "avg": 6.287122964997925,
+  "min": 0.365
+}</td></tr>
+    </table>
+</body>
+</html>
